@@ -1,54 +1,59 @@
 import React, {Component} from 'react';
 import logo from '../logo.png'
 import {Link} from 'react-router-dom';
-import {ButtonContainer} from './button'
 export default class Navbar extends Component {
     state = {  }
     render() { 
         return ( 
-            <nav className="navbar navbar-expand-sm navbar-dark px-sm-5">
-                <Link to="/">
-                    <img src={logo} alt="store" className="logo navbar-brand" />
+            
+            <nav className="navbar navbar-expand-lg navbar-light">
+            <div className="container">
+                <Link className="navbar-brand" to="/">
+                    <img src={logo} alt="logo" className="img-fluid" width="200px" />
                 </Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul className="navbar-nav align-items-center" >
-                        <li className="nav-item ml-5">
-                            <Link to="/" className="nav-link">
+    
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto">
+    
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Engagement
                             </Link>
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <Link className="dropdown-item" to="/">How the Custom Process works</Link>
+                                <Link className="dropdown-item" to="/">Past Custom Rings</Link>
+                                <div className="dropdown-divider"></div>
+                                <Link className="dropdown-item" to="/">Made-to-Order Rigns</Link>
+                                <Link className="dropdown-item" to="/">Women's Wedding Bands</Link>
+                                <Link className="dropdown-item" to="/">Man's Wedding Bands</Link>
+                            </div>
                         </li>
-                        <li className="nav-item ml-5">
-                            <Link to="/" className="nav-link">
-                                Jewelry
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Custom Jewelry
                             </Link>
-                        </li>
-                        <li className="nav-item ml-5">
-                            <Link to="/about" className="nav-link">
-                                About
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                
-                <Link to="/cart" className="ml-auto">
-                    <ButtonContainer>
-                        <span className="mx-2">
-                        <i className="fa fa-user-o"> </i>
-                        </span>
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <Link className="dropdown-item" to="/product">All Items</Link>
+                                <div className="dropdown-divider"></div>
 
-                        <span className="mx-2">
-                        <i className="fa fa-cart-plus"> </i>
-                        </span>
-                   
-                       
-                    </ButtonContainer>
-                </Link>
-            </nav>
+                                <Link className="dropdown-item" to="/product">Rings</Link>
+                                <Link className="dropdown-item" to="/product">Necklaces</Link>
+                                <Link className="dropdown-item" to="/product">Bracelets</Link>
+                                <Link className="dropdown-item" to="/product">Earrings</Link>
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/about">About</Link>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+            </div>
+        </nav>
          );
     }
 }
-
- 

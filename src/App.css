@@ -53,3 +53,10 @@ a.nav-link{
   font-size:16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.banner_txt{
+  position: absolute;
+    text-align: center;
+    margin: 25% 10% 30% 50%;
+    font-family: fantasy;
+    color:#009ffd;
+}

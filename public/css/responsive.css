@@ -1,0 +1,441 @@
+/*extra small device*/
+
+/*main_page*/
+
+@media(max-width:575px) {
+
+
+    .search {
+        text-align: center;
+    }
+
+    .header_text p {
+        font-size: 12px;
+    }
+
+    .search span {
+        display: none;
+    }
+
+    #banner_part {
+        padding: 20px 0px;
+    }
+
+    .banner_topic h5 {
+        color: #fff;
+    }
+
+    .banner_topic ul li {
+        color: #fff;
+    }
+
+    #design_part {
+        padding: 50px 0px;
+
+    }
+
+    .testi_big {
+
+        margin-left: 0px;
+    }
+
+    .design_topic h5 {
+        font-size: 40px;
+
+    }
+
+    .vector_image {
+        margin: 10px 50px;
+    }
+
+    .design_topic ul li {
+        font-size: 20px;
+
+    }
+
+    .subs p {
+        left: 13%;
+    }
+
+    .footer_link p {
+
+        text-align: center;
+    }
+
+    .footer_link ul li {
+
+        text-align: center;
+    }
+
+    .cash_card {
+        margin: 10px 0px;
+    }
+
+    .ask_me {
+        visibility: hidden;
+    }
+
+
+    /*about_page*/
+
+
+    .values_topic {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .values_topic h5 {
+        font-size: 20px;
+
+    }
+
+    .model_text {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 100px;
+    }
+
+    .model_text h3 {
+        color: #010101;
+    }
+
+    .model_text p {
+        font-size: 20px;
+        color: #010101;
+        padding: 0px;
+
+    }
+
+
+    /*home_page*/
+
+    .homepage_banner_text h3 {
+        font-size: 38px;
+        padding-bottom: 20px;
+    }
+
+    .vector_image_banner {
+        margin-left: 0px;
+    }
+
+    .chev {
+
+        right: 64px;
+
+    }
+
+    .cstm_clk {
+        margin-left: -5px;
+    }
+
+    .easy_text {
+        margin: 100px 0px;
+    }
+
+    .easy_text p {
+        padding: 0px 10px;
+    }
+
+    .pricing_part_homepage_text {
+        margin-top: 50px;
+        margin-right: 0px;
+    }
+
+    .pricing_part_homepage_text p {
+
+        padding: 0px;
+    }
+
+    .pricing_rings_text h5 {
+        font-size: 40px;
+    }
+
+    .occasion_part p {
+        padding: 0px 30px;
+    }
+
+    .pricing_rings_text p {
+
+        padding: 0px;
+    }
+
+    .ring_right {
+        bottom: 336%;
+        right: 4%;
+
+    }
+
+    .ring_left {
+        bottom: 334%;
+        left: 3%;
+
+    }
+
+    .pricing_rings {
+        margin-top: 70px;
+    }
+
+    #pricing_part_homepage::before {
+
+        top: 48%;
+        left: 46%;
+    }
+
+    #pricing_part_homepage::after {
+
+        top: 49%;
+
+    }
+
+    .slider_text h6 {
+
+        padding-top: 20px;
+    }
+
+    #occasion_part {
+        padding: 50px 0px;
+    }
+
+    .slider_text {
+        margin-top: 0px;
+    }
+
+    .ring_brand {
+        margin-top: 50px;
+    }
+
+    .ring_homepage_text {
+        margin: 50px 0px;
+    }
+}
+
+/*extra small device*/
+
+@media(min-width:576px)and (max-width:767px) {
+
+    .search {
+        text-align: center;
+    }
+
+    .header_text p {
+        font-size: 20px;
+    }
+
+    .search span {
+        font-size: 20px;
+    }
+
+    .banner_topic h5 {
+        color: #fff;
+    }
+
+    .banner_topic ul li {
+        color: #fff;
+    }
+
+    .testi_big {
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+
+    .testi_right p {
+        font-size: 15px;
+    }
+
+    .copyright_text {
+        text-align: left;
+    }
+
+
+    /*about_page*/
+    .model_text {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 100px;
+    }
+
+    .model_text h3 {
+        color: #010101;
+    }
+
+    .model_text p {
+        font-size: 20px;
+        color: #010101;
+        padding: 0px;
+
+    }
+
+    /*home_page*/
+
+    .chev {
+
+        right: 134px;
+        top: 30px;
+    }
+
+    .homepage_banner_text h3 {
+
+        font-size: 38px;
+        padding-bottom: 30px;
+    }
+
+    .ring_brand {
+        margin-top: 30px;
+    }
+
+    .ring_logos img {
+        width: 500px;
+    }
+
+    .ring_brand h6 {
+        margin-left: 154px;
+    }
+
+    .pricing_part_homepage_text {
+        margin-top: 50px;
+        margin-right: 0px;
+    }
+
+    .occasion_part h3 {
+        font-size: 37px;
+
+    }
+
+    #occasion_part {
+        padding: 16px 0px;
+
+    }
+
+    .ring_right {
+        right: 7%;
+    }
+
+    .ring_left {
+        left: 5%;
+    }
+
+    .occasion_part p {
+
+        padding: 0px 100px;
+    }
+
+    .ring_homepage_text {
+        margin: 100px 0px;
+    }
+
+    .testi_big {
+        margin-left: 0px;
+    }
+}
+
+
+
+@media(min-width:768px)and (max-width:991px) {
+
+
+    .header_text p {
+        font-size: 15px;
+    }
+
+    .testi_big {
+
+        margin-top: 100px;
+    }
+
+    .ask_me ul li a {
+        font-size: 10px;
+
+    }
+
+    .copyright_text {
+        text-align: left;
+    }
+
+
+
+    /*about_page*/
+
+
+    .model_text {
+        text-align: center;
+        margin: 0px;
+
+    }
+
+    .model_text h3 {
+        color: #010101;
+    }
+
+    .model_text p {
+        font-size: 20px;
+        color: #010101;
+        padding: 0px;
+
+    }
+
+    .model_iamge {
+        margin-top: 67px;
+    }
+
+    .team_pic {
+        margin-top: 35px;
+    }
+
+    .team_preview p {
+        font-size: 14px;
+
+    }
+
+    .testi_big {
+        margin-top: 50px;
+    }
+
+    /*home_page*/
+
+
+
+    .chev {
+        right: 72px;
+        top: 30px;
+    }
+
+    .homepage_pic {
+        margin-top: 250px;
+    }
+
+    .ring_brand {
+        margin-top: 100px;
+    }
+
+    .ring_logos img {
+        width: 100%;
+    }
+
+    .ring_brand h6 {
+        margin-left: 250px;
+    }
+
+    .pricing_part_homepage_text {
+        margin-top: 40px;
+        margin-right: 0px;
+
+    }
+
+    .pricing_part_homepage_text p {
+
+        padding: 0px 20px;
+    }
+
+    .pricing_rings_text p {
+
+        padding: 0px 10px;
+    }
+
+    .pricing_rings {
+        margin-top: 228px;
+    }
+
+    .occasion_part p {
+        padding: 0px 200px;
+    }
+}
