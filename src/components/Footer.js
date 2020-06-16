@@ -113,7 +113,7 @@ class Footer extends Component {
 
                             <div className="ask_me">
                                 <div className="ask_image">
-                                    <img src="images/sleep.png" alt="" />
+                                    <img src="images/sleep.png" alt="msg" />
                                 </div>
                                 <ul>
                                     <li><Link to="/"></Link>Ask Me A Question!</li>
