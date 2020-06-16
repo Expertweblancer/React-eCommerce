@@ -60,3 +60,8 @@ a.nav-link{
     font-family: fantasy;
     color:#009ffd;
 }
+
+.shopping_btn{
+  /* background: #596067!important; */
+  border: solid 1px #232528!important;
+ }
