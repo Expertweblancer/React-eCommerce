@@ -8,7 +8,9 @@ class ProductProvider extends Component {
     state = { 
         products:storeProducts,
         detailProduct:detailProduct,
-        cart:[]
+        cart:[],
+        modalOpen: true,
+        modalProduct: detailProduct
      }
     componentDidMount(){
         this.setProducts();
@@ -20,7 +22,7 @@ class ProductProvider extends Component {
             tempProducts = [...tempProducts, singleItem];
         });
         this.setState(()=>{
-            return { products: tempProducts };
+            return { products: tempProducts};
         });
     }
     getItem = id =>{
@@ -43,22 +45,21 @@ class ProductProvider extends Component {
         const price = product.price;
         product.total = price;
         this.setState(()=>{
-            return {product: tempProducts};
+            return {products: tempProducts, cart:[...this.state.cart, product]};
+        }, ()=>{
+            console.log(this.state)
         })
     }
 
-    tester = ()=>{
-        console.log('State products: ', this.state.products[0].inCart);
-        console.log('Date products: ', storeProducts[0].inCart);
-
-        const tempProducts = [...this.state.products];
-        tempProducts[0].inCart = true
-
+    openModal = id =>{
+        const product = this.getItem(id);
         this.setState(()=>{
-            return {products:tempProducts}
-        }, ()=>{
-            console.log("State products :", this.state.products[0].inCart);
-            console.log("Data products :", storeProducts[0].inCart);
+            return{modalProduct:product, modalOpen: true}
+        })
+    }
+    closeModal = () =>{
+        this.setState(()=>{
+            return {modalOpen:false}
         })
     }
     render() { 
@@ -66,7 +67,9 @@ class ProductProvider extends Component {
             <ProductContext.Provider value={{
                 ...this.state,
                 handleDetail:this.handleDetail,
-                addToCart:this.addToCart
+                addToCart:this.addToCart,
+                openModal:this.openModal,
+                closeModal: this.closeModal
             }}>
                 
                 {this.props.children}
